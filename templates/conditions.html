@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statements using jinja operations</title>
+</head>
+<body>
+    <center>
+    <!--- using if condition
+        {% if name %}
+           <h1>{{name}}</h1>
+        {% endif %}
+    -->
+    <!--- using if else condition
+        {% if age > 18 %}
+           <h1>Eligible for marriage</h1>
+        {% else %}
+            <h1>not eligible</h1>
+        {% endif %}
+    -->
+    <!---
+        {% if age < 30 %}
+            {% if age > 18 %}
+             <h1>eligible for marr</h1>
+            {% else %}
+             <h1>not eligible</h1>
+            {% endif %}
+        {% else %}
+             <h1>single</h1>
+        {% endif %}
+    -->
+    for loop
+        {% for i in CDT %}
+            <h1>{{i}}</h1>
+        {% endfor %}
+            
+    </center>
+    
+</body>
+</html>
